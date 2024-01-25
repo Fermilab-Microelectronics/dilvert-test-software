@@ -22,18 +22,18 @@ TRIGGER	| |15	|21 (PA4/D21) (6 from bot left)
 
 ## Hardware: Power Connections
 
-Voltage	|Function	|Reasonable Starting Value (based on sim) | Supply
+Voltage	|Function	|Reasonable Starting Value (based on sim) | Supply Pins (CRYO_ISOK63 Flange)
 --- | --- | --- | ---
 VDDIO | I/O Supply Voltage | +1.8 V | LS Board
 VDD | Core Supply Voltage | +0.8 V | LS Board
-VTUNE_N_FAST	|Higher voltage makes NFETs in the fast chain go faster.	|+1.9 V | J2-7
-VTUNE_P_FAST	|Lower voltage makes PFETs in the fast chain go faster.	|+0.1 V | J2-5
-VTUNE_N_SLOW	|Higher voltage makes NFETs in the slow chain go faster.	|+0.55 V | J2-11
-VTUNE_P_SLOW	|Lower voltage makes PFETs in the slow chain go faster.	|+1.45 V | J2-9
-VTUNE_N_RO	|Higher voltage makes the NFETs in the ring oscillator go faster.	|+1 V | J2-13
-VTUNE_P_RO	|Lower voltage makes the PFETs in the ring oscillator go faster.	|+1 V | J2-3
-NMOS_BG_BIAS	|Biases NFETs in the digital domain.	|+1 V | J2-15
-PMOS_BG_BIAS	|Biases PFETs in the digital domain.	|-1 V | J2-1
+VTUNE_N_FAST	|Higher voltage makes NFETs in the fast chain go faster.	|+1.9 V | J5-7 (SMUA CH3)
+VTUNE_P_FAST	|Lower voltage makes PFETs in the fast chain go faster.	|+0.1 V | J5-5 (SMUA CH2)
+VTUNE_N_SLOW	|Higher voltage makes NFETs in the slow chain go faster.	|+0.55 V | J5-11 (SMUB CH1)
+VTUNE_P_SLOW	|Lower voltage makes PFETs in the slow chain go faster.	|+1.45 V | J5-9 (SMUB CH0)
+VTUNE_N_RO	|Higher voltage makes the NFETs in the ring oscillator go faster.	|+1 V | J5-13 (SMUB CH2)
+VTUNE_P_RO	|Lower voltage makes the PFETs in the ring oscillator go faster.	|+1 V | J5-3 (SMUA CH1)
+NMOS_BG_BIAS	|Biases NFETs in the digital domain.	|+1 V | J5-15 (SMUB CH3)
+PMOS_BG_BIAS	|Biases PFETs in the digital domain.	|-1 V | J5-1 (SMUA CH0)
 
 
 
