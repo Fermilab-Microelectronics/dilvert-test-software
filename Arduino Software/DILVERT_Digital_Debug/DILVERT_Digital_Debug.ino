@@ -3,8 +3,21 @@
 #include "generic_hal.h"
 
 
-//DILVERT HAL STREAMING V1.x
-// 12/16/2022 - Adam Quinn
+/* DILVERT Digital Debug HAL 
+ * 12/16/2022 - Adam Quinn
+ *
+ * This HAL performs checks to help debug communications w/ DILVERT Digital.
+ *
+ * (1) SWEEP CHECK 
+ * If SWEEP_CHECK = True, the Arduino will perform a scan chain loopback test
+ * with 1,000 test vectors and check for any bit flips / bit errors. 
+ * If failures are detected, the program will halt here and idle until reset.
+ * This means your communication with the Scan Chain is not working. 
+ *
+ * (2) Readout Sequence Check
+ * Next, it will run the readout sequence once for every time you enter a character over serial. 
+ *
+ */ 
 
 //CONTROL SWITCHES ***************************************************
 #define PORTENTA 1
@@ -47,7 +60,7 @@ int serialByte = 0;
 
 int single_acquisition = 0;
 
-bool SWEEP_CHECK = false;
+bool SWEEP_CHECK = true;
 long sweep_check_max = 0;
 bool sweep_check_pass = true;
 int sweep_check_fail_count = 0;

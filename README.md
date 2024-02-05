@@ -9,15 +9,15 @@ Digital control and communications is handled by an Arduino. The Arduino must al
 
 ## Hardware: Digital Signal Connections
 
-DILVERT SIGNAL	| LEVEL SHIFTER BOARD	  | SPARKFUN PRO MICRO	| PORTENTA
---- | --- | --- | ---
-S_DIN	|P0.0	|9	|PC7/D4 (1 from bot left)
-S_CLK	|P0.1	|10	|PC6/D5 (0 from bot left)
-S_PASS	|P0.2	|5	|1 (PK1/D1) (4 from bot left)
-S_LOAD	|P0.3	|4	|2 (PJ11/D2) (3 from bot left)
-RESET	|P0.5	|6	|0 (PH15/D0) (5 from bot left)
-S_DOUT	|P2.5	|8	|PG7/D3 (2 from bot left)
-TRIGGER	| |15	|21 (PA4/D21) (6 from bot left)
+DILVERT SIGNAL	| LEVEL SHIFTER BOARD	  | SPARKFUN PRO MICRO	| PORTENTA | HD CONN | BREAKOUT
+--- | --- | --- | --- | --- | ---
+S_DIN	|P0.0	|9	|PC7/D4 (1 from bot left) | J2-63 | PWM2
+S_CLK	|P0.1	|10	|PC6/D5 (0 from bot left) | J2-61 |  PWM1
+S_PASS	|P0.2	|5	|1 (PK1/D1) (4 from bot left) | J2-60 | PWM5
+S_LOAD	|P0.3	|4	|2 (PJ11/D2) (3 from bot left) | J2-67 | PWM4
+RESET	|P0.5	|6	|0 (PH15/D0) (5 from bot left) | J2-62 | PWM6
+S_DOUT	|P2.5	|8	|PG7/D3 (2 from bot left) | J2-65 | PWM3
+TRIGGER	| |15	|21 (PA4/D21) (6 from bot left) | J2-78 | A6 (?)
 			
 
 ## Hardware: Power Connections
