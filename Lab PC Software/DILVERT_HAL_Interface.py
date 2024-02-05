@@ -6,9 +6,9 @@
 
 ## USER SETTINGS ##
 #LINES_TO_READ=-1 will read lines indefinitely (until Ctrl-C)
-LINES_TO_READ = 10000
-OUTFILE_NAME = "test16_AQc_200ps.csv" #Should be a .csv file.
-SERIAL_PORT = 'COM12'
+LINES_TO_READ = 100
+OUTFILE_NAME = "test123.csv" #Should be a .csv file.
+SERIAL_PORT = 'COM3'
 BAUD = 230400
 
 ####################

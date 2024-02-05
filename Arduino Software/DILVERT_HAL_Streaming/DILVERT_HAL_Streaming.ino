@@ -3,8 +3,16 @@
 #include "generic_hal.h"
 
 
-//DILVERT HAL STREAMING V1.x
+//DILVERT HAL STREAMING V1.1
 // 12/16/2022 - Adam Quinn
+// 
+// This software will continuously stream data from the ASIC (one data
+// point per trigger pulse). 
+// On startup, it will wait for a byte from the user over the serial 
+// interface. If that byte is ASCII '1' it will take a single acquisition.
+// If that byte is ASCII '2', it will take continuous acquisitions 
+// forever.
+//
 
 //CONTROL SWITCHES ***************************************************
 #define PORTENTA 1
