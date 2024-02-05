@@ -37,3 +37,12 @@ PMOS_BG_BIAS	|Biases PFETs in the digital domain.	|-1 V | J5-1 (SMUA CH0)
 
 
 
+## Common Issues
+
+Qfine is always 100 or always 0? 
+-> Check the bias voltages / connections. The fast chain and slow chain of the vernier must have significantly different bias voltages, or else the fast edge will never catch up to the slow edge, and you will see Qfine=100.
+-> Check the pulsewidths of START and STOP. The pulse must last long enough for the data to be latched by (READY & SC_PASS).
+
+Python streaming software cannot open the port ("Permission Denied")
+-> Is the Arduino Serial Monitor open? Arduino Serial Monitor and Python cannot access the same port at the same time. 
+
